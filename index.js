@@ -16,4 +16,10 @@ console.log(isEven(4));
 // const isPrime = function(inputNumber) {
 // // Write your code here
 // }
-const isPrime = () => {};
+const isPrime = (inputNumber) => {
+  for (var i = 2; i < inputNumber; i++) {
+    if (inputNumber % i === 0) return false;
+  }
+  return inputNumber > 1;
+};
+console.log(isPrime(9));
